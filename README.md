@@ -32,9 +32,9 @@ This is intentionally a proper **star-ish schema**: `customers` and `plans` are 
 | `customers` | ~2% near-duplicate rows (same company, mangled name, new ID) | Simulates duplicate lead/customer records from multiple systems |
 | `subscriptions` | Same mixed-date-format issue on `start_date` | Same reasoning, different table |
 | `invoices` | ~10% of `amount` stored as a string like `"$1,234.00"` | You'll need to strip symbols/commas and cast to numeric |
-| `invoices` | ~1.5% clear data-entry outliers (amount off by 100x or 0.01x) | Outlier detection is a named requirement — this gives you real ones to find |
+| `invoices` | ~1.5% clear data-entry outliers (amount off by 100x or 0.01x) | Outlier detection is a named requirement - this gives you real ones to find |
 | `usage_monthly` | Usage tapers off in the 3 months before a cancelled subscription ends | Gives your EDA/churn analysis a genuine signal to discover, not a random dataset |
-| `support_tickets` | `resolved_date` is NULL for ~5% of tickets | A meaningful NULL (still open), different from a data-quality NULL — worth distinguishing in your write-up |
+| `support_tickets` | `resolved_date` is NULL for ~5% of tickets | A meaningful NULL (still open), different from a data-quality NULL - worth distinguishing in your write-up |
 
 ## Next steps (don't do these yet - just context)
 
