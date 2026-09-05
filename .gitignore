@@ -1,0 +1,4 @@
+   raw_data.zip
+   *.pyc
+   __pycache__/
+   .env
