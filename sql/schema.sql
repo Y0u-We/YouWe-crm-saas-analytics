@@ -13,8 +13,8 @@ CREATE TABLE customers (
     company_name          TEXT NOT NULL,
     country               TEXT NOT NULL,          -- standardized to full country names
     company_size_band     TEXT,                    -- '1-10','11-50','51-200','201-1000','1000+' or NULL
-    signup_date           DATE NOT NULL,
-    acquisition_channel   TEXT                     -- NULL allowed; standardize to a fixed set of channels
+    signup_date DATE NOT NULL, acquisition_channel TEXT, signup_date_ambiguous BOOLEAN DEFAULT FALSE ,                    -- NULL allowed; standardize to a fixed set of channels
+    signup_date_ambiguous BOOLEAN DEFAULT FALSE     -- TRUE = source date was an ambiguous d/m vs m/d format, defaulted to day-first
 );
 
 CREATE TABLE plans (
@@ -40,7 +40,8 @@ CREATE TABLE invoices (
     subscription_id  INTEGER NOT NULL REFERENCES subscriptions(subscription_id),
     invoice_date     DATE NOT NULL,
     amount           NUMERIC(10,2) NOT NULL,         -- cast from messy string in Python cleaning step
-    payment_status   TEXT NOT NULL CHECK (payment_status IN ('paid','failed','refunded'))
+    payment_status TEXT NOT NULL CHECK (payment_status IN ('paid','failed','refunded')), is_outlier BOOLEAN DEFAULT FALSE,
+    is_outlier       BOOLEAN DEFAULT FALSE           -- TRUE = amount is >5x or <0.2x the expected plan price; flagged for review, not auto-corrected
 );
 
 CREATE TABLE usage_monthly (

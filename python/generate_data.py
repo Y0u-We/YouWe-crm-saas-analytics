@@ -102,7 +102,7 @@ for i in range(1, N_CUSTOMERS + 1):
 
     customers.append({
         "customer_id": i,
-        "company_name": fake.company(),
+        "company_name":fake.unique.company(),
         "country": country_display,
         "company_size_band": company_size,
         "signup_date": messy_date(signup_ts),

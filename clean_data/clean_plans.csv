@@ -1,0 +1,4 @@
+plan_id,plan_name,tier,monthly_price,annual_price
+1,Starter,Starter,29,290
+2,Professional,Professional,79,790
+3,Enterprise,Enterprise,199,1990
