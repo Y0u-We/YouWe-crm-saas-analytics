@@ -1,5 +1,5 @@
 """
-Nimbus CRM — Data Cleaning Script
+YouWe CRM — Data Cleaning Script
 ------------------------------------------------
 Cleans the messy raw CSVs from generate_data.py into a shape that
 loads cleanly into schema.sql. Every cleaning decision is commented —

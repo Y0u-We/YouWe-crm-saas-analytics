@@ -1,5 +1,5 @@
 -- ============================================================
--- Nimbus CRM — SaaS Churn & Revenue Analytics
+-- YouWe CRM — SaaS Churn & Revenue Analytics
 -- Target relational schema (this is what your CLEANED data
 -- loads into — the raw CSVs from generate_data.py do NOT match
 -- this exactly on purpose; cleaning them into this shape is

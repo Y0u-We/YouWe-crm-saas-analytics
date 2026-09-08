@@ -1,5 +1,5 @@
 """
-Nimbus CRM — Synthetic SaaS Dataset Generator
+YouWe CRM — Synthetic SaaS Dataset Generator
 ------------------------------------------------
 Generates a realistic, DELIBERATELY MESSY multi-table dataset simulating
 a B2B SaaS company's customer/subscription/billing/usage/support data.
