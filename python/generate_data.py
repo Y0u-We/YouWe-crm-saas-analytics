@@ -262,7 +262,8 @@ for _, sub in subs_df.iterrows():
 
     for idx, m in enumerate(months):
         if sub["status"] == "cancelled" and idx >= n_months - 3:
-            decay = 1 - (n_months - idx) * 0.25  # usage tapers off before churn
+            months_before_end = (n_months - 1) - idx
+            decay = 0.25 + 0.25 * months_before_end
             decay = max(decay, 0.1)
         else:
             decay = 1.0
