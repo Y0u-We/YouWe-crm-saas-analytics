@@ -1,21 +1,21 @@
-# YouWe CRM — SaaS Churn, Retention & Revenue Analytics
+# YouWe CRM - SaaS Churn, Retention & Revenue Analytics
 
-An end-to-end data analyst project simulating a real B2B SaaS company's analytics stack — from a deliberately messy raw dataset through to an executive Power BI dashboard, with every number cross-validated across Python, SQL, Excel, and Power BI.
+An end-to-end data analyst project simulating a real B2B SaaS company's analytics stack - from a deliberately messy raw dataset through to an executive Power BI dashboard, with every number cross-validated across Python, SQL, Excel, and Power BI.
 
 **[Read the full case study →](case_study.md)**
 
 ## The headline finding
 
-Net Revenue Retention is **90.5%** — below the 100% threshold that separates healthy growth from a customer base that's quietly shrinking underneath new-customer acquisition. Full reasoning and supporting numbers are in the case study above.
+Net Revenue Retention is **90.5%** - below the 100% threshold that separates healthy growth from a customer base that's quietly shrinking underneath new-customer acquisition. Full reasoning and supporting numbers are in the case study above.
 
 ## What this project demonstrates
 
 - Designing a normalized relational database from raw, messy, multi-table data
-- Advanced SQL (CTEs, window functions, cohort analysis) for real business questions — MRR movement, churn, retention, CLV
+- Advanced SQL (CTEs, window functions, cohort analysis) for real business questions - MRR movement, churn, retention, CLV
 - Python for data generation, cleaning, and exploratory analysis
 - Excel for pivot-table analysis and a formula-driven stakeholder report
 - Power BI: star-schema modeling, DAX, and a 5-page executive dashboard
-- **Cross-tool validation as a discipline, not an afterthought** — every headline number was checked against at least one other tool, and several real bugs were caught and fixed this way rather than shipped
+- **Cross-tool validation as a discipline, not an afterthought** - every headline number was checked against at least one other tool, and several real bugs were caught and fixed this way rather than shipped
 
 ## Project structure
 
@@ -32,16 +32,16 @@ Net Revenue Retention is **90.5%** — below the 100% threshold that separates h
 
 ## Step-by-step build
 
-Each step has its own README with the reasoning, the exact bugs found, and how they were fixed — not just the final polished result:
+Each step has its own README with the reasoning, the exact bugs found, and how they were fixed - not just the final polished result:
 
 | Step | What it covers |
 |---|---|
 | [Step 1](STEP1_README.md) | Data design, ERD, and a deliberately messy synthetic dataset generator |
-| [Step 2](STEP2_README.md) | Python data cleaning — country standardization, date parsing, de-duplication, outlier flagging |
-| [Step 3](STEP3_README.md) | SQL analysis — MRR waterfall, churn, cohort retention, CLV, Net Revenue Retention |
+| [Step 2](STEP2_README.md) | Python data cleaning - country standardization, date parsing, de-duplication, outlier flagging |
+| [Step 3](STEP3_README.md) | SQL analysis - MRR waterfall, churn, cohort retention, CLV, Net Revenue Retention |
 | [Step 4](STEP4_README.md) | Python EDA and visualizations, including 3 real bugs found by cross-checking against SQL |
-| [Step 5](STEP5_README.md) | Excel — pivot-ready data, a formula-driven Monthly Business Review one-pager |
-| [Step 6](STEP6_README.md) | Power BI — star schema, DAX measures, 5-page executive dashboard |
+| [Step 5](STEP5_README.md) | Excel - pivot-ready data, a formula-driven Monthly Business Review one-pager |
+| [Step 6](STEP6_README.md) | Power BI - star schema, DAX measures, 5-page executive dashboard |
 
 ## Tech stack
 
@@ -57,4 +57,4 @@ Each step has its own README with the reasoning, the exact bugs found, and how t
 
 ## Why this project exists
 
-Built as a portfolio piece to demonstrate genuine end-to-end analyst work — not a single-tool exercise, but the same kind of cross-functional, multi-tool workflow a Data Analyst actually uses at an MNC: raw data in, a validated database and analysis in the middle, a business-ready dashboard and case study out the other end.
+Built as a portfolio piece to demonstrate genuine end-to-end analyst work - not a single-tool exercise, but the same kind of cross-functional, multi-tool workflow a Data Analyst actually uses at an MNC: raw data in, a validated database and analysis in the middle, a business-ready dashboard and case study out the other end.
