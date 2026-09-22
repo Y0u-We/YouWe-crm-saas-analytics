@@ -48,11 +48,15 @@ Each step has its own README with the reasoning, the exact bugs found, and how t
 **Python** (pandas, NumPy, Faker, matplotlib, seaborn) · **PostgreSQL** · **SQL** (CTEs, window functions, CASE-based classification) · **Excel** (pivot tables, SUMIFS/INDEX-MATCH, conditional formatting) · **Power BI** (star schema, DAX, live database connection)
 
 ## Dashboard preview
-
+ Executive Overview
  <img width="592" height="332" alt="Executive Overview" src="https://github.com/user-attachments/assets/00d2505c-82e8-4914-8e65-0f031fa6f1b3" />
+ Revenue Waterfall
 <img width="593" height="334" alt="Revenue Waterfall" src="https://github.com/user-attachments/assets/5596a71d-e718-4198-89f6-f8aa24189c9b" />
+Churn and Retention
 <img width="593" height="335" alt="Churn and Retention" src="https://github.com/user-attachments/assets/0a57e6ea-e246-47c7-bd4e-ac293b85a2d6" />
+Customer Segments and CLV
 <img width="594" height="336" alt="Customer Segments and CLV" src="https://github.com/user-attachments/assets/d5d5b1e8-c992-40f4-82b5-dec22f4a4409" />
+Acquisition Channel Performance
 <img width="593" height="336" alt="Acquisition Channel Performance" src="https://github.com/user-attachments/assets/2cb98407-d068-4917-aaf1-9954f62e8010" />
 
 
