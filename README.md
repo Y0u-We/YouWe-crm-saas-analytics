@@ -49,7 +49,7 @@ Each step has its own README with the reasoning, the exact bugs found, and how t
 
 ## Dashboard preview
 
-*(Add 2-3 screenshots here — the Executive Overview page and the Churn & Retention cohort heatmap are the strongest ones to lead with.)*
+ ![Executive Overview](docs/images/executive-overview.png) ![Revenue Waterfall](docs/images/revenue-waterfall.png) ![Churn and Retention](docs/images/churn-and-retention.png) ![Customer Segments and CLV](docs/images/customer-segments-and-clv.png) ![Acquisition Channel Performance](docs/images/acquisition-channel-performance.png)
 
 ## Why this project exists
 
